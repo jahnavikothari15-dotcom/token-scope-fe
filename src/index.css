@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* shadcn tokens mapped to TokenScope obsidian palette */
+    --background: 220 30% 5%;         /* #080A0F */
+    --foreground: 220 20% 97%;        /* #F5F7FA */
+    --card: 220 25% 9%;               /* #10141C */
+    --card-foreground: 220 20% 97%;
+    --popover: 220 30% 5%;
+    --popover-foreground: 220 20% 97%;
+    --primary: 187 100% 50%;          /* #00E5FF */
+    --primary-foreground: 220 30% 5%;
+    --secondary: 220 25% 12%;         /* #161C26 */
+    --secondary-foreground: 220 20% 97%;
+    --muted: 220 25% 12%;
+    --muted-foreground: 217 12% 60%;  /* #8B95A5 */
+    --accent: 220 25% 12%;
+    --accent-foreground: 220 20% 97%;
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 220 20% 97%;
+    --border: 220 20% 15%;            /* #1E2532 */
+    --input: 220 20% 15%;
+    --ring: 187 100% 50%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html,
+  body,
+  #root {
+    background-color: #080a0f;
+    color: #f5f7fa;
+  }
+  body {
+    font-family: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection {
+    background: rgba(0, 229, 255, 0.28);
+    color: #f5f7fa;
+  }
+}
+
+@layer components {
+  .mono {
+    font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular,
+      Menlo, monospace;
+    font-variant-ligatures: none;
+  }
+  .hairline {
+    border-color: #1e2532;
+  }
+  .grid-noise {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-size: 36px 36px;
+    background-position: -1px -1px;
+  }
+  .glow-cyan {
+    box-shadow: 0 0 0 1px rgba(0, 229, 255, 0.28) inset;
+  }
+}
+
+@layer base {
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
+  [data-debug-wrapper="true"] > * {
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-top: inherit;
+    margin-bottom: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    column-gap: inherit;
+    row-gap: inherit;
+    gap: inherit;
+    border-left-width: inherit;
+    border-right-width: inherit;
+    border-top-width: inherit;
+    border-bottom-width: inherit;
+    border-left-style: inherit;
+    border-right-style: inherit;
+    border-top-style: inherit;
+    border-bottom-style: inherit;
+    border-left-color: inherit;
+    border-right-color: inherit;
+    border-top-color: inherit;
+    border-bottom-color: inherit;
+  }
+}

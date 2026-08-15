@@ -1,0 +1,21 @@
+/* TokenScope global overrides */
+.App {
+  min-height: 100vh;
+  background-color: #080a0f;
+  color: #f5f7fa;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #10141c;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #2a3241;
+  border-radius: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #3a4557;
+}

@@ -1,70 +1,139 @@
-# Getting Started with Create React App
+ ⚡ TokenScope
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Make Every Token Count.
 
-## Available Scripts
+**TokenScope** is a tool for analyzing and optimizing AI prompts with a focus on **token usage, cost awareness, and prompt efficiency**.
 
-In the project directory, you can run:
+As LLMs become a bigger part of modern applications, every prompt matters. TokenScope helps you understand what you're sending to AI models and where you can make your prompts more efficient.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ 🚀 Why TokenScope?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+AI development isn't only about getting better outputs.
 
-### `npm test`
+It's also about using AI **efficiently**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A few unnecessary tokens might not matter in a single request. But across thousands or millions of API calls, unnecessary token usage can significantly increase costs.
 
-### `npm run build`
+**TokenScope makes that usage visible.**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ ✨ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* 🔢 **Token Analysis** — Understand the token usage of your prompts.
+* 💰 **Cost Estimation** — Estimate the potential cost associated with token consumption.
+* 🧠 **Prompt Analysis** — Identify areas where prompts can potentially be made more efficient.
+* ⚡ **Prompt Optimization** — Improve prompt efficiency while maintaining the original intent.
+* 📊 **Clear Insights** — Present token and cost information in an easy-to-understand interface.
+* 🔍 **Efficiency Focused** — Built around the idea of reducing unnecessary token consumption.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ 🎯 The Idea
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> **Don't just make AI smarter. Make the way we use AI smarter.**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+TokenScope was built around a simple question:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**How efficiently are we using the prompts we send to AI?**
 
-## Learn More
+Instead of treating tokens as an invisible technical detail, TokenScope makes them something developers can actually **see, understand, and optimize.**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ 🛠️ Tech Stack
 
-### Code Splitting
+* **React**
+* **JavaScript**
+* **HTML**
+* **CSS**
+* **Tailwind CSS**
+* **AI / LLM APIs**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+ 🖥️ Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```text
+token-scope-fe/
+│
+├── public/
+├── src/
+│   ├── components/
+│   └── ...
+│
+├── package.json
+├── tailwind.config.js
+├── craco.config.js
+└── README.md
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+ ⚙️ Getting Started
 
-### Advanced Configuration
+### 1. Clone the repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+git clone https://github.com/jahnavikothari15-dotcom/token-scope-fe.git
+```
 
-### Deployment
+### 2. Navigate to the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+cd token-scope-fe
+```
 
-### `npm run build` fails to minify
+### 3. Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm start
+```
+
+The application will be available at:
+
+```text
+http://localhost:3000
+```
+
+---
+
+🔮 Future Improvements
+
+Some areas that can be explored further:
+
+* Support for more LLM providers and models
+* More detailed token-cost comparisons
+* Prompt version comparison
+* Prompt history and analytics
+* Advanced optimization strategies
+* Usage dashboards
+* Additional model pricing data
+
+---
+
+ 🌐 Project
+
+**TokenScope** is built to make AI usage more transparent and efficient.
+
+### Make Every Token Count. ⚡
+
+---
+
+⭐ Support
+
+If you find TokenScope interesting or useful, consider giving the repository a ⭐.
+
+Feedback, ideas, and contributions are always welcome.
+
+---
+
+**Built with curiosity, AI, and a lot of tokens.** 🤖
